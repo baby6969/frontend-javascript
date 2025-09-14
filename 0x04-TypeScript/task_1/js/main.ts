@@ -1,3 +1,14 @@
+// Define the Teacher interface
+interface Teacher {
+  readonly firstName: string;
+  readonly lastName: string;
+  fullTimeEmployee: boolean;
+  location: string;
+  yearsOfExperience?: number;
+  [key: string]: any; // allow extra attributes
+}
+
+// Create a teacher object
 const teacher3: Teacher = {
   firstName: 'John',
   fullTimeEmployee: false,
@@ -7,28 +18,3 @@ const teacher3: Teacher = {
 };
 
 console.log(teacher3);
-
-// should print
-// Object
-// contract: false
-// firstName: "John"
-// fullTimeEmployee: false
-// lastName: "Doe"
-// location: "London"
-
-const director1: Directors = {
-  firstName: 'John',
-  lastName: 'Doe',
-  location: 'London',
-  fullTimeEmployee: true,
-  numberOfReports: 17,
-};
-console.log(director1);
-
-// should print
-// Object
-// firstName: "John"
-// fullTimeEmployee: true
-// lastName: "Doe"
-// location: "London"
-// numberOfReports: 17
