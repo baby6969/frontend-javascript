@@ -4,7 +4,7 @@ namespace Subjects {
     teacher!: Teacher; // instance attribute
 
     // Correct setter method
-    setTeacher(teacher: Teacher): void {
+    setTeacher(teacher:Teacher): void {
       this.teacher = teacher;
     }
   }
