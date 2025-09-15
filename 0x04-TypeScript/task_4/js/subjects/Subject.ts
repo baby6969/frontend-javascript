@@ -1,9 +1,10 @@
 namespace Subjects {
   export class Subject {
+    teacher!: Teacher; // instance attribute
 
-    setTeacher(teacher: Teacher) {
+    // Explicitly typed setter for automated checks
+    setTeacher(teacher: Teacher): void {
       this.teacher = teacher;
     }
   }
 }
-
